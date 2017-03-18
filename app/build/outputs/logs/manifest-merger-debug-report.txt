@@ -1,0 +1,100 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:7:22-76
+application
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:9:5-28:19
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/pashko00710/.android/build-cache/dda7a1b3905cf27106602a86d11d2e08839df2f6/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.3.0] /Users/pashko00710/.android/build-cache/bb9d08e58e3941c50f60878c5d74e8d0b7c88b61/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/pashko00710/.android/build-cache/1c612f30221780aef460037da7c5a03d9cc67a38/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/pashko00710/.android/build-cache/03fb8ec657694132e1891795140ab11d9de6afc4/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/pashko00710/.android/build-cache/efdf30684e1181525e6010baefced5f50d59f7c9/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] /Users/pashko00710/.android/build-cache/b75604aa0bd54bffd884dfc69f668d6051e53a43/output/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.4.2] /Users/pashko00710/.android/build-cache/9374624cffb5dff9433fb55fde282fb28584ed1d/output/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.4.2] /Users/pashko00710/.android/build-cache/dc97ea31bb0ee00a50b9984cdc0f83f5a760aff4/output/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.1] /Users/pashko00710/.android/build-cache/c4ce5ae679421a20f3a94b7adf0e64ddd9b3626c/output/AndroidManifest.xml:9:5-20
+MERGED from [com.fernandocejas.frodo:frodo-runtime:0.8.3] /Users/pashko00710/.android/build-cache/02878e30661fb4f7da4ed2590e23f53e53ad6fc1/output/AndroidManifest.xml:11:5-20
+	android:label
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:10:9-28
+activity#com.snijsure.rssreader.ui.activities.MainActivity
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:15:9-24:20
+	android:label
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:17:13-45
+	android:theme
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:16:13-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.snijsure.rssreader.ui.activities.DetailRssActivity
+ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:25:9-27:59
+	android:theme
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml:26:13-60
+uses-sdk
+INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [io.realm:realm-android-library:2.3.0] /Users/pashko00710/.android/build-cache/044a96096d5cd516dadf6e897f217f259bf3e3ea/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] /Users/pashko00710/.android/build-cache/d043b8bf4ac4fc32d71a4fca3d1b9f1d68bb52f2/output/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/pashko00710/.android/build-cache/dda7a1b3905cf27106602a86d11d2e08839df2f6/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.3.0] /Users/pashko00710/.android/build-cache/bb9d08e58e3941c50f60878c5d74e8d0b7c88b61/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/pashko00710/.android/build-cache/1c612f30221780aef460037da7c5a03d9cc67a38/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/pashko00710/.android/build-cache/03fb8ec657694132e1891795140ab11d9de6afc4/output/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/pashko00710/.android/build-cache/efdf30684e1181525e6010baefced5f50d59f7c9/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/pashko00710/.android/build-cache/3b04a0b1066f2e1f0f649a84d3f638d7640b110e/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] /Users/pashko00710/.android/build-cache/b75604aa0bd54bffd884dfc69f668d6051e53a43/output/AndroidManifest.xml:20:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] /Users/pashko00710/.android/build-cache/9959f54cc253d297b55368c97a72b8bcb2825d6b/output/AndroidManifest.xml:19:5-43
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.4.2] /Users/pashko00710/.android/build-cache/9374624cffb5dff9433fb55fde282fb28584ed1d/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.4.2] /Users/pashko00710/.android/build-cache/dc97ea31bb0ee00a50b9984cdc0f83f5a760aff4/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.uphyca:stetho_realm:2.0.0] /Users/pashko00710/.android/build-cache/5c1abad8c5821cba319aa4e582ff85d89ff228e7/output/AndroidManifest.xml:8:5-10:41
+MERGED from [io.realm:android-adapters:1.4.0] /Users/pashko00710/.android/build-cache/f0218d58c1aa1779fe7617a5a5d5cc77d385c7ad/output/AndroidManifest.xml:6:5-8:41
+MERGED from [com.jakewharton:butterknife:8.4.0] /Users/pashko00710/.android/build-cache/d294c2d19a1e5556c9294de0a4a3d4a5f0c2b2ab/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.1] /Users/pashko00710/.android/build-cache/c4ce5ae679421a20f3a94b7adf0e64ddd9b3626c/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.fernandocejas.frodo:frodo-runtime:0.8.3] /Users/pashko00710/.android/build-cache/02878e30661fb4f7da4ed2590e23f53e53ad6fc1/output/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.3.0] /Users/pashko00710/.android/build-cache/1c612f30221780aef460037da7c5a03d9cc67a38/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pashko00710/Downloads/rssreader-master/app/src/main/AndroidManifest.xml

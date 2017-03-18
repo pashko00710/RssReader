@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RSS Feed Reader</string>
+    <string name="all_items">Лучшее за все время</string>
+    <string name="weekly_items">Лучшее за неделю</string>
+    <string name="monthly_items">Лучшее за месяц</string>
+</resources>
