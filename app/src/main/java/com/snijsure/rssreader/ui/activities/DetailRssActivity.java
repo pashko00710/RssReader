@@ -49,18 +49,22 @@ public class DetailRssActivity extends AppCompatActivity {
         textViewPubDate.setText(rssItemDate);
         textViewTitle.setText(rssItemTitle);
         textViewDescription.setText(doc.body().text());
-        Picasso.with(this)
-                .load(rssItemImage)
-//                .placeholder(R.drawable.user_placeholder)
-//                .error(R.drawable.user_placeholder_error)
-                .into(imageViewTitle);
+        if(!rssItemImage.isEmpty()) {
+            Picasso.with(this)
+                    .load(rssItemImage)
+                    .into(imageViewTitle);
+        } else {
+            Picasso.with(this)
+                    .load("http://vignette2.wikia.nocookie.net/steamplane/images/b/b0/Happy_Face_100x100.gif/revision/latest?cb=20120104232844")
+                    .into(imageViewTitle);
+        }
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // handle arrow click here
         if (item.getItemId() == android.R.id.home) {
-            startMainActivity(); // close this activity and return to preview activity (if there is any)
+            startMainActivity();
         }
 
         return super.onOptionsItemSelected(item);

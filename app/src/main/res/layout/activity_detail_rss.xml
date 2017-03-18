@@ -1,79 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
 <android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinatorlayout_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fitsSystemWindows="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-        <android.support.design.widget.AppBarLayout
-            android:id="@+id/appbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:theme="@style/AppTheme.PopupOverlay">
-
-            </android.support.v7.widget.Toolbar>
-
-        </android.support.design.widget.AppBarLayout>
-
-    </android.support.design.widget.CoordinatorLayout>
-    <ScrollView
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/coordinatorlayout_container">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
             <TextView
+                android:id="@+id/textview_pubdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textview_pubdate"
                 android:gravity="right"/>
 
             <TextView
+                android:id="@+id/textview_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textview_title"
-                android:textSize="16dp"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/textview_pubdate"
-                android:layout_alignParentStart="true" />
+                android:textSize="16sp"/>
 
             <ImageView
+                android:id="@+id/imageview_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="180dp"
-                android:id="@+id/imageview_title"
+                android:layout_below="@+id/textview_title"
                 android:layout_marginTop="16dp"
-                android:scaleType="centerCrop"
-                android:layout_below="@+id/textview_title"/>
+                android:minHeight="180dp"
+                android:scaleType="centerCrop"/>
 
             <TextView
+                android:id="@+id/textview_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textview_desc"
                 android:layout_below="@id/imageview_title"
                 android:layout_margin="16dp"/>
 
 
             <TextView
+                android:id="@+id/textview_guid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textview_guid"
                 android:layout_below="@+id/textview_desc"
-                android:paddingBottom="32dp"
                 android:autoLink="web"
-                android:textSize="16sp"
-                />
+                android:paddingBottom="32dp"
+                android:textSize="16sp"/>
+
         </RelativeLayout>
     </ScrollView>
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

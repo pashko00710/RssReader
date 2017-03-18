@@ -5,8 +5,8 @@ import android.content.Context;
 import com.snijsure.rssreader.App;
 import com.snijsure.rssreader.data.network.RestCallTransformer;
 import com.snijsure.rssreader.data.network.RestService;
-import com.snijsure.rssreader.data.storage.realm.RssItemRealm;
 import com.snijsure.rssreader.data.network.model.RssFeed;
+import com.snijsure.rssreader.data.storage.realm.RssItemRealm;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Response;
@@ -18,6 +18,7 @@ import rx.schedulers.Schedulers;
 public class DataManager {
     private Context mContext;
     private static DataManager ourInstance;
+    String mode;
 
     RestService mRestService;
     RealmManager mRealmManager;
@@ -51,6 +52,7 @@ public class DataManager {
             items = mRestService.getWeeklyRssItems();
         } else if(channel.contains("monthly")) {
             items = mRestService.getMonthlyRssItems();
+
         }
 
         return items.compose(new RestCallTransformer<>())
@@ -72,4 +74,6 @@ public class DataManager {
     public Observable<RssItemRealm> getRssItems(String channel) {
         return getRealmManager().getRssItemsFromRealm(channel);
     }
+
+
 }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements IMainView {
     private static String TAG = "MainActivity";
     RssItemAdapter mAdapter;
     MainPresenter mPresenter = MainPresenter.getInstance();
+    private Toolbar mToolbar;
     RssItemAdapter.RssItemHolder.OnClickListener mListener = rssItem -> mPresenter.onRssCardClick(rssItem);
 
     @Override
@@ -33,7 +35,10 @@ public class MainActivity extends AppCompatActivity implements IMainView {
         setContentView(R.layout.activity_main);
 
         rss_feed_list = (RecyclerView)findViewById(R.id.rss_feed_list);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mAdapter = new RssItemAdapter(mListener, this);
+
+        setSupportActionBar(mToolbar);
 
         mPresenter.takeView(this);
         mPresenter.initView("all");
@@ -48,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements IMainView {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-         mAdapter.clearData();
+        mAdapter.clearData();
         switch (item.getItemId()) {
             case R.id.all_items:
                 mPresenter.initView("all");

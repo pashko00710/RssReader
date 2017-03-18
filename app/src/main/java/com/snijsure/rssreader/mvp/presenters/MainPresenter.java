@@ -78,12 +78,8 @@ public class MainPresenter extends AbstractPresenter<IMainView> {
 
         @Override
         public void onNext(RssItemRealm productRealm) {
-            Log.e("lul", "onNext: this"+productRealm.getId());
+            Log.e("lul", "onNext: this"+productRealm.getChannel());
             mAdapter.addItem(productRealm);
-//            if(mAdapter.getCount() -1 == lastPagerPosition) {
-//                getRootView().hideLoad();
-//            getView().showRssItems();
-//            }
         }
     }
 }

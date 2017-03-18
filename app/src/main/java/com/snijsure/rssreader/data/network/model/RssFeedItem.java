@@ -16,8 +16,12 @@ public class RssFeedItem implements Serializable {
     @Element(name = "description", required = true )
     private String description;
 
-    @Element(name = "", required = true)
-    private String imageUrl;
+//    @Element(name = "link")
+//    private String link;
+//
+//    public String getLink() {
+//        return link;
+//    }
 
     public RssFeedItem(String title, String description, String publicationDate) {
         this.title = title;

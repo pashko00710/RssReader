@@ -19,9 +19,9 @@ public class MainModel {
     @RxLogObservable
     public Observable<RssItemRealm> getRssItemsObs(String channel) {
         Observable<RssItemRealm> disk = fromDisk(channel);
-        Observable<RssItemRealm> network = fromNetwork(channel).cache();
+        Observable<RssItemRealm> network = fromNetwork(channel);
         return Observable.mergeDelayError(disk, network)
-                .distinct(RssItemRealm::getId);
+                .distinct(RssItemRealm::getTitle);
     }
 
     @RxLogObservable

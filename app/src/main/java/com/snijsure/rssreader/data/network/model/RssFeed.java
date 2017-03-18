@@ -10,12 +10,10 @@ import java.io.Serializable;
 public class RssFeed implements Serializable {
 
     @Attribute
-    private
-    String version;
+    private String version;
 
     @Element
-    private
-    RssChannel channel;
+    private RssChannel channel;
 
     public RssChannel getChannel() {
         return channel;
@@ -35,7 +33,7 @@ public class RssFeed implements Serializable {
 
     @Override
     public String toString() {
-        return "RSS{" +
+        return "RssFeed{" +
                 "version='" + version + '\'' +
                 ", channel=" + channel +
                 '}';

@@ -82,11 +82,17 @@ public class RssItemAdapter extends RecyclerView.Adapter<RssItemAdapter.RssItemH
 //                        android.R.drawable.gallery_thumb);
                 Picasso.with(mContext)
                         .load(absoluteUrl)
-//                .placeholder(R.drawable.user_placeholder)
-//                .error(R.drawable.user_placeholder_error)
+                .placeholder(android.R.drawable.gallery_thumb)
+                .error(android.R.drawable.gallery_thumb)
                         .into(holder.imageView);
                 holder.descriptionTextField.setText(doc.body().text());
             }
+        } else {
+            Picasso.with(mContext)
+                    .load("http://vignette2.wikia.nocookie.net/steamplane/images/b/b0/Happy_Face_100x100.gif/revision/latest?cb=20120104232844")
+                    .placeholder(android.R.drawable.gallery_thumb)
+                    .error(android.R.drawable.gallery_thumb)
+                    .into(holder.imageView);
         }
         holder.publicationDateTextField.setText(item.getPublicationDate());
     }
